@@ -26,6 +26,6 @@ dlt.create_auto_cdc_flow(
  target="silver_airports",
  source="transform_airports",
  keys=["airport_id"],
- sequence_by = col("airport_id"),
+ sequence_by = col("modifiedDate"),
  stored_as_scd_type = 1
 )
